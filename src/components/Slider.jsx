@@ -10,12 +10,12 @@ const Slider = () => {
     <Carousel.Item interval={1000}>
       <img width={'100%'} height={800}
         className="d-block w-100"
-        src="./img/first.jpg"
+        src="./img/Screenshot_1.png"
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>1000 мелочей</h3>
+        {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
          
           <Link exact to={'/form'}>
           <Button variant="primary">
@@ -30,7 +30,7 @@ const Slider = () => {
     <Carousel.Item interval={500}>
       <img width={'100%'} height={800}
         className="d-block w-100"
-        src="./img/second.jpg"
+        src="./img/Omnicom-Expands.jpg"
         alt="Second slide"
       />
       <Carousel.Caption>
@@ -40,7 +40,7 @@ const Slider = () => {
     <Carousel.Item>
       <img  width={'100%'}height={800}
         className="d-block w-100"
-        src="./img/three.jpg"
+        src="./img/567-e15182165479271-scaled.jpg"
         alt="Third slide"
       />
       <Carousel.Caption>

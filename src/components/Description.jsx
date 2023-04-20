@@ -1,31 +1,65 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import '../App.css'
 
 const Description = () => {
   return (
     <div>
-      <div>
-    {/* <div>Description</div>
 
-      <motion.img 
-      width={'15%'}
-      src='/img/icon.png'
-      alt=''
+      <motion.div id='div1'
 
-        //анимация
-        animate={{rotate:360}}
-        transition={{
-          delay:1,
-          duration: 5,
-          repeat: Infinity,
-          repeatDelay: 0.5,
-          repeatType:'reverse',
-          type:'inertia'
+        initial={{
+          opacity: 0,
+          // scale: 0.5
         }}
-        />
+        animate={{
+          scale: 1,
+          opacity: 1
+        }}
+        transition={{
+          duration: 2
+        }}>
+        "1000 мелочей" - это интернет-магазин, который предлагает широкий ассортимент товаров. Здесь вы найдете все разрешенные товары - от бытовой химии и косметики до электроники и домашнего текстиля. Магазин заботится о своих клиентах и предоставляет только качественные товары от проверенных поставщиков.
+        <br />
+        <br />
+        В магазине "1000 мелочей" вы найдете все необходимые товары для дома, работы и отдыха. Здесь представлены товары для ухода за собой и своим домом, а также товары для здоровья и красоты. Вы можете выбрать нужный вам товар из широкого ассортимента, и мы доставим его прямо к вам домой.
+        <br />
+        <br />
+        Наши консультанты всегда готовы помочь вам с выбором товара и ответить на все ваши вопросы. Мы ценим каждого клиента и всегда стремимся предоставить лучший сервис и самые выгодные предложения. Благодаря нашему интернет-магазину "1000 мелочей" вы можете с легкостью купить все необходимые товары, не выходя из дома.
+      </motion.div>
 
-        <motion.p
+      {/* <motion.div id='div2'
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          delay: 1,
+          duration: 2
+        }}>
+        <motion.img
+          src='logo192.png'
+          className='banner'
+          width={850}
+
+          animate={{ rotate: 360 }}
+
+          initial={{
+            opacity: 0.6
+          }}
+
+          transition={{
+            duration: 5
+          }}
+
+          whileTap={{ rotate: 360 }} />
+
+      </motion.div> */}
+
+      {/* <motion.p
         initial={{
           x:-1000,
           opacity:0
@@ -41,131 +75,8 @@ const Description = () => {
           type:'tween'
         }}
         >
-            Текст который появится 
-        </motion.p> */}</div>
-        
-        <motion.div id='div1'
-
-        initial={{
-          x:-1000,
-          opacity: 0
-        }}
-
-        animate={{
-          x:0,
-          opacity: 1
-        }}
-        transition={{
-          delay:1,
-          duration:2
-        }}
-        >
-          Complete documentation of the Framer Motion animation library. 
-          A production-ready motion library for React.</motion.div>
-
-          <motion.div id='div2'
-          initial={{
-            opacity:0,
-          }}
-          animate={{
-            y:0,
-            opacity:1
-          }}
-          transition={{
-            delay:1,
-            duration:2
-          }}>
-            <motion.img
-            src='img/banner-new.jpeg'
-            className='banner'
-            width={850}
-
-            initial={{
-              opacity:0.6
-            }}
-
-            transition={{
-              duration:5
-            }}
-
-            whileTap={{rotate:360}}/>
-
-          </motion.div>
-          <div id='divImg'>
-          <motion.div id='div3'
-          initial={{
-            opacity:0,
-            scale:0.5
-          }}
-          animate={{
-            scale:1,
-            opacity:1
-          }}
-          transition={{
-            duration:2
-          }}>
-            <motion.img
-            src='img/ball.jpg'
-            className='ball'
-            width={200}
-
-            initial={{
-              opacity:0.6
-            }}
-
-            transition={{
-              duration:5
-            }}
-
-            whileHover={{
-              scale:1.5,
-              transition:{
-                duration:2
-              }
-            }}/>
-
-          </motion.div>
-
-
-          <motion.div id='div4'
-          initial={{
-            opacity:0,
-            scale:0.5
-          }}
-          animate={{
-            scale:1,
-            opacity:1
-          }}
-          transition={{
-            duration:2
-          }}>
-            <motion.img drag='x'
-            src='img/ball.jpg'
-            className='ball'
-            width={200}
-
-            initial={{
-              opacity:0.6
-            }}
-
-            transition={{
-              duration:5
-            }}
-
-            whileDrag={{
-              scale:1.5,
-             
-            }}/>
-
-          </motion.div>
-
-            <motion.button className='btn btn-primary'
-            whileHover={{
-              scale:1.2
-            }}>
-            Нажми</motion.button>
-            </div>
-
+            Какой-то текст 
+        </motion.p> */}
     </div>
   )
 }

@@ -24,9 +24,9 @@ const [favorites, setFavorites] = useState([])
 const [overlayItems, setOverlayItems] = useState([])
 useEffect (()=>{
   async function axiosData(){
-    const tyrsData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/tyrs')
+    const tyrsData = await axios.get('https://6416e95a47092b8b6137aaa3.mockapi.io/product')
     const favoritesData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/favorites')
-    const cartData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/cart')
+    const cartData = await axios.get('https://6416e95a47092b8b6137aaa3.mockapi.io/cart')
 
     setTyrs(tyrsData.data)
     setFavorites(favoritesData.data)
@@ -37,7 +37,7 @@ useEffect (()=>{
 
 
 const deleteItems=(id)=>{
-  axios.delete(`https://637f91ca2f8f56e28e904e7d.mockapi.io/cart/${id}`)
+  axios.delete(`https://6416e95a47092b8b6137aaa3.mockapi.io/cart/${id}`)
   setOverlayItems((objDelete)=> objDelete.filter(item=> item.id !==id))
 }
 
